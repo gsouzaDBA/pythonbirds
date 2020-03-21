@@ -4,10 +4,10 @@ from tkinter import PhotoImage, NW, Tk, Canvas
 from tkinter.constants import ALL
 import math
 from os import path
-import atores
+from pythonbirds import atores
 
-from fase import Fase, EM_ANDAMENTO, VITORIA
-from atores import PassaroVermelho, PassaroAmarelo, Porco, Obstaculo
+from pythonbirds.fase import Fase, EM_ANDAMENTO, VITORIA
+from pythonbirds.atores import PassaroVermelho, PassaroAmarelo, Porco, Obstaculo
 
 ALTURA_DA_TELA = 600  # px
 

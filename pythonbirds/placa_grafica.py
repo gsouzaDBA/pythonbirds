@@ -3,7 +3,7 @@ import os
 import platform
 import time
 import sys
-from templates import FIM
+from pythonbirds.templates import FIM
 
 try:
     import msvcrt

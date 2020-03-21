@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from itertools import chain
 
 import os
 from os import path
@@ -8,17 +7,16 @@ import math
 import sys
 
 project_dir = path.dirname(__file__)
-project_dir = path.join('..')
+project_dir = path.join('../..')
 sys.path.append(project_dir)
-from placa_grafica_tkinter import rodar_fase
+from pythonbirds.placa_grafica_tkinter import rodar_fase
 
 project_dir = os.path.join(os.path.dirname(__file__), '..')
 project_dir = os.path.normpath(project_dir)
 sys.path.append(project_dir)
 
-from atores import Obstaculo, Porco, PassaroVermelho, PassaroAmarelo, DESTRUIDO, ATIVO, \
-    Ator, Passaro
-from fase import Fase, Ponto, EM_ANDAMENTO, VITORIA, DERROTA
+from pythonbirds.atores import Obstaculo, Porco, PassaroVermelho, PassaroAmarelo, DESTRUIDO
+from pythonbirds.fase import Fase, Ponto, EM_ANDAMENTO, VITORIA, DERROTA
 
 class FaseTestes(TestCase):
     def teste_acabou_com_porcos_e_passaros(self):

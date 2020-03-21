@@ -4,12 +4,12 @@ import sys
 import math
 
 project_dir = path.dirname(__file__)
-project_dir = path.join('..')
+project_dir = path.join('../..')
 sys.path.append(project_dir)
 
-from atores import PassaroAmarelo, PassaroVermelho, Obstaculo, Porco
-from fase import Fase
-from placa_grafica_tkinter import rodar_fase
+from pythonbirds.atores import PassaroAmarelo, Obstaculo, Porco
+from pythonbirds.fase import Fase
+from pythonbirds.placa_grafica_tkinter import rodar_fase
 from random import randint
 
 if __name__ == '__main__':
