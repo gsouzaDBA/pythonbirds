@@ -123,13 +123,31 @@ class Direcao:
     #        self.valor = OESTE
     # ...
 
-    #Código Melhorado usando o Dicionario, usado em solucões de chave valor
+    # #Código Melhorado usando o Dicionario, usado em solucões de chave valor
     def girar_a_direita(self):
         self.valor = self.rotacao_a_direita_dct[self.valor]
 
     def girar_a_esquerda(self):
         self.valor = self.rotacao_a_esquerda_dct[self.valor]
 
+## Código Sugerido no forum por lucas polo
+## https://gist.github.com/lucaspolo/78d48f0b1777d82ab3a9c647a595cfc1
+
+# DIRECOES = ['Norte', 'Leste', 'Sul', 'Oeste']
+#
+# class Direcao:
+#
+#     def __init__(self):
+#         self.__direcao = 0
+#         self.valor = DIRECOES[self.__direcao]
+#
+#     def girar_a_direita(self):
+#         self.__direcao = (self.__direcao + 1) % len(DIRECOES)
+#         self.valor = DIRECOES[self.__direcao]
+#
+#     def girar_a_esquerda(self):
+#         self.__direcao = (self.__direcao - 1) % len(DIRECOES)
+#         self.valor = DIRECOES[self.__direcao]
 
 class Motor:
     def __init__(self):
